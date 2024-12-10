@@ -14,13 +14,11 @@ public class TurmaFrame extends JFrame {
     public TurmaFrame(Controlador controlador) {
         this.controlador = controlador;
 
-        // Configurações da janela
         setTitle("Gerenciamento de Turma");
         setSize(300, 200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(null);
 
-        // Botões
         listarAlunosButton = new JButton("Listar Alunos");
         novoAlunoButton = new JButton("Novo Aluno");
         resultadosButton = new JButton("Resultados");
@@ -33,7 +31,6 @@ public class TurmaFrame extends JFrame {
         add(novoAlunoButton);
         add(resultadosButton);
 
-        // Ações dos botões
         listarAlunosButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -4,13 +4,11 @@ public class Aluno {
     private String nome;
     private double nota;
 
-    // Construtor
     public Aluno(String nome, double nota) {
         this.nome = nome;
         this.nota = nota;
     }
 
-    // Getters e Setters
     public String getNome() {
         return nome;
     }

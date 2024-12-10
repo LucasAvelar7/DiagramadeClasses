@@ -12,12 +12,10 @@ public class AlunosCadastradosFrame extends JFrame {
     public AlunosCadastradosFrame(Controlador controlador) {
         this.controlador = controlador;
 
-        // Configurações da janela
         setTitle("Alunos Cadastrados");
         setSize(300, 400);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 
-        // Lista de alunos
         alunosList = new JList<>();
         carregarDados();
 
